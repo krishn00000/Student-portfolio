@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            font-family: Verdana;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        header p {
+            padding: 0px 20px 0px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 1rem;
+            background: #fff;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.1rem;
+        }
+
+        .project {
+            background: #e4e4e4;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3, .project h4 {
+            margin: 0.5rem 0;
+        }
+
+        .active {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chinni Krishna Popuri</h1>
+        <p>Aspiring Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring web developer with a passion for creating intuitive, responsive, and engaging user experiences. My journey into web development began with a fascination for how websites are built and how they function behind the scenes. Over the past few months, I have honed my skills in HTML, CSS, and JavaScript, and have delved into modern frameworks like React to build dynamic and interactive web applications. I thrive on problem-solving and enjoy the challenge of translating complex requirements into clean, efficient code. My projects reflect my dedication to continuous learning and my commitment to staying updated with the latest industry trends and technologies.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: AutoMart</h3>
+            <h4>Project Overview:</h4>
+            <p>AutoMart is a dynamic web application designed to facilitate the buying and selling of automobiles, including cars and bikes. This platform provides a seamless user experience, enabling individuals to list their vehicles for sale, browse available listings, and connect with potential buyers or sellers.</p>
+            <h4>Key Features:</h4>
+            <p>1. User Authentication: Secure user registration and login. Profile management for sellers and buyers.</p>
+            <p>2. Vehicle Listings: Easy-to-use interface for creating detailed vehicle listings with photos, descriptions, and pricing. Categorization of listings by vehicle type, make, model, year, and price range.</p>
+            <p>3. Advanced Search and Filters: Powerful search functionality to find specific vehicles. Filters for narrowing down search results based on criteria like location, price, and vehicle condition.</p>
+            <p>4. Responsive Design: Fully responsive design ensures a great user experience on both desktop and mobile devices.</p>
+            <p>5. Communication Tools: Integrated messaging system for direct communication between buyers and sellers. Email notifications for new messages and updates.</p>
+            <p>6. Admin Dashboard: Administrative panel for managing listings, users, and site content. Analytics and reporting tools for monitoring site activity and performance.</p>
+            <h4>Project Goals:</h4>
+            <p>AutoMart aims to create a reliable and user-friendly marketplace for automobile enthusiasts and everyday users alike. By providing comprehensive tools and features, it seeks to streamline the process of buying and selling vehicles, making it as effortless and efficient as possible.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <h4>Project Overview:</h4>
+            <p>The To-Do List Application is a simple web-based project aimed at helping users manage their tasks efficiently. Users can add, delete, and mark tasks as completed. This project will enhance your skills in HTML, CSS, and JavaScript, providing practical experience in building interactive web applications.</p>
+            <h4>Key Features:</h4>
+            <p> 1. Add Task: Users can add new tasks to the list.</p>
+            <p> 2. Delete Task: Users can remove tasks from the list.</p>
+            <p> 3. Mark Task as Completed: Users can mark tasks as completed, and completed tasks will be visually distinct.</p>
+            <p> 4. Persistent Storage (Optional): Use local storage to save tasks so that they persist even after the browser is closed.</p>
+            <h4>Project Goals:</h4>
+            <p>This To-Do List Application project is a great way to practice and demonstrate your web development skills. It covers the basics of HTML, CSS, and JavaScript, and provides a solid foundation for building more complex web applications.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Feel free to download my resume to gain insights into my background and experience.</p>
+        <a href="C:\Users\91967\Downloads\Resume (2).pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: chinnikrishna852@gmail.com</p>
+        <p>Mobile: 9676207871</p>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight the active section in the navigation bar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll animation for sections
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Local storage for resume download link
+        document.querySelector('a[download]').addEventListener('click', function () {
+            localStorage.setItem('resumeDownloaded', 'true');
+        });
+
+        // Check if the resume has been downloaded
+        if (localStorage.getItem('resumeDownloaded')) {
+            document.querySelector('a[download]').innerText = 'Resume Downloaded';
+        }
+    </script>
+</body>
+</html>
