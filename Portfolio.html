@@ -162,7 +162,7 @@
     </section>
 
     <script>
-        // Smooth scrolling for navigation links
+        
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -173,7 +173,7 @@
             });
         });
 
-        // Highlight the active section in the navigation bar
+        
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -195,7 +195,7 @@
             });
         });
 
-        // Scroll animation for sections
+    
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -208,12 +208,12 @@
             observer.observe(section);
         });
 
-        // Local storage for resume download link
+        
         document.querySelector('a[download]').addEventListener('click', function () {
             localStorage.setItem('resumeDownloaded', 'true');
         });
 
-        // Check if the resume has been downloaded
+        
         if (localStorage.getItem('resumeDownloaded')) {
             document.querySelector('a[download]').innerText = 'Resume Downloaded';
         }
